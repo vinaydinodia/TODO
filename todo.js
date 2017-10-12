@@ -18,7 +18,7 @@ angular.module('todoApp', [])
       return count;
     };
  
-    todoList.archive = function() {
+    todoList.delete = function() {
       var oldTodos = todoList.todos;
       todoList.todos = [];
       angular.forEach(oldTodos, function(todo) {
