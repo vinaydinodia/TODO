@@ -2,7 +2,7 @@ angular.module('todoApp', [])
   .controller('TodoListController', function() {
     var todoList = this;
     todoList.todos = [
-      {text:'Java Script', done:true},
+      {text:'Java Script', done:false},
       {text:'angularjs', done:false}];
  
     todoList.addTodo = function() {

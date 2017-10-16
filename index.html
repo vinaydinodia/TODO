@@ -1,9 +1,13 @@
 <!doctype html>
 <html ng-app="todoApp">
   <head>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="todo.css">
+    <script  src="js/bootstrap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script src="todo.js"></script>
-    <link rel="stylesheet" href="todo.css">
+    
   </head>
   <body>
     <h2>Todo</h2>
@@ -13,7 +17,7 @@
       <ul class="unstyled">
         <li ng-repeat="todo in todoList.todos">
           <label class="checkbox">
-            <input type="checkbox" ng-model="todo.done">
+            <input  type="checkbox"  ng-model="todo.done">
             <span class="done-{{todo.done}}">{{todo.text}}</span>
           </label>
         </li>
